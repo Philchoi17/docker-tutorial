@@ -70,3 +70,16 @@ down: docker-compose down --rmi all
 run: docker run
 
 ```
+
+# Dockerfile
+
+```
+-- base image
+FROM node:alpine
+-- copy contents into directory
+COPY . /app
+-- working directory
+WORKDIR /app
+-- run command
+CMD node app.js
+```
